@@ -1,6 +1,6 @@
-# API REST — PetzIn
+# API REST — Hóspede Pet
 
-Esta documentação descreve os endpoints atualmente implementados no backend do PetzIn.
+Esta documentação descreve os endpoints atualmente implementados no backend do Hóspede Pet.
 
 ## Visão geral
 
@@ -85,7 +85,7 @@ Resposta `200`:
 ```json
 {
   "status": "ok",
-  "message": "API PetzIn funcionando!"
+  "message": "API Hóspede Pet funcionando!"
 }
 ```
 
@@ -99,9 +99,9 @@ Requisição:
 
 ```json
 {
-  "nome": "Proprietária PetzIn",
-  "email": "admin@petzin.com",
-  "senha": "PetzIn@123"
+  "nome": "Proprietária Hóspede Pet",
+  "email": "admin@hospedepet.com",
+  "senha": "HospedePet@123"
 }
 ```
 
@@ -117,8 +117,8 @@ Resposta `201`:
 ```json
 {
   "id": "6e035c73-ec86-44b4-ac0f-960851a23503",
-  "nome": "Proprietária PetzIn",
-  "email": "admin@petzin.com",
+  "nome": "Proprietária Hóspede Pet",
+  "email": "admin@hospedepet.com",
   "criadoEm": "2026-10-16T12:00:00.000Z"
 }
 ```
@@ -133,8 +133,8 @@ Requisição:
 
 ```json
 {
-  "email": "admin@petzin.com",
-  "senha": "PetzIn@123"
+  "email": "admin@hospedepet.com",
+  "senha": "HospedePet@123"
 }
 ```
 
@@ -145,8 +145,8 @@ Resposta `200`:
   "token": "<jwt>",
   "usuario": {
     "id": "6e035c73-ec86-44b4-ac0f-960851a23503",
-    "nome": "Proprietária PetzIn",
-    "email": "admin@petzin.com",
+    "nome": "Proprietária Hóspede Pet",
+    "email": "admin@hospedepet.com",
     "criadoEm": "2026-10-16T12:00:00.000Z"
   }
 }
@@ -163,8 +163,8 @@ Resposta `200`:
 ```json
 {
   "id": "6e035c73-ec86-44b4-ac0f-960851a23503",
-  "nome": "Proprietária PetzIn",
-  "email": "admin@petzin.com",
+  "nome": "Proprietária Hóspede Pet",
+  "email": "admin@hospedepet.com",
   "criadoEm": "2026-10-16T12:00:00.000Z"
 }
 ```

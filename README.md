@@ -1,4 +1,4 @@
-# PetzIn
+# Hóspede Pet
 
 Sistema web para administração de um hotel e creche de animais. A aplicação permite que a proprietária do estabelecimento gerencie tutores, pets, reservas, hospedagens e pagamentos em um único lugar.
 
@@ -85,7 +85,7 @@ Sistema web para administração de um hotel e creche de animais. A aplicação 
 - Listagens e ações administrativas.
 - Tela financeira.
 - Mensagens de carregamento, sucesso e erro.
-- Layout responsivo inspirado no protótipo do PetzIn.
+- Layout responsivo inspirado no protótipo do Hóspede Pet.
 
 ## Como usar os módulos de cuidados e medicamentos
 
@@ -283,7 +283,7 @@ Falta de controle de disponibilidade - Sem verificar a disponibilidade antes de 
 
 No modelo original, cada reserva manteria uma cópia do telefone. Seria necessário localizar e atualizar todas as reservas de Carlos, com risco de deixar registros divergentes.
 
-No PetzIn, o telefone existe somente em `Tutor`. A alteração é feita uma única vez e todas as consultas passam a apresentar o dado atualizado por meio do relacionamento.
+No Hóspede Pet, o telefone existe somente em `Tutor`. A alteração é feita uma única vez e todas as consultas passam a apresentar o dado atualizado por meio do relacionamento.
 
 ### Como consultar Rex individualmente?
 
@@ -365,8 +365,8 @@ Confirme que o Docker Desktop está aberto e que as portas `8080`, `3000` e `543
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Paulo-Lennon/PetzIn.git
-cd PetzIn
+git clone https://github.com/Paulo-Lennon/Hospede-Pet.git
+cd Hospede-Pet
 ```
 
 ### 2. Crie o arquivo de configuração
@@ -422,7 +422,7 @@ Resposta esperada:
 ```json
 {
   "status": "ok",
-  "message": "API PetzIn funcionando!"
+  "message": "API Hóspede Pet funcionando!"
 }
 ```
 
@@ -434,9 +434,9 @@ Windows PowerShell:
 
 ```powershell
 $corpo = @{
-  nome = "Administrador PetzIn"
-  email = "admin@petzin.local"
-  senha = "PetzIn@123"
+  nome = "Administrador Hóspede Pet"
+  email = "admin@hospedepet.local"
+  senha = "HospedePet@123"
 } | ConvertTo-Json
 
 Invoke-RestMethod `
@@ -451,7 +451,7 @@ Linux ou macOS:
 ```bash
 curl -X POST http://localhost:8080/api/usuarios \
   -H "Content-Type: application/json" \
-  -d '{"nome":"Administrador PetzIn","email":"admin@petzin.local","senha":"PetzIn@123"}'
+  -d '{"nome":"Administrador Hóspede Pet","email":"admin@hospedepet.local","senha":"HospedePet@123"}'
 ```
 
 A senha deve possuir entre 7 e 12 caracteres, incluindo pelo menos uma letra, um número e um caractere especial.
@@ -519,8 +519,8 @@ Neste modo, somente o PostgreSQL fica no Docker. Backend e frontend são executa
 ### 1. Clone e configure o ambiente
 
 ```bash
-git clone https://github.com/Paulo-Lennon/PetzIn.git
-cd PetzIn
+git clone https://github.com/Paulo-Lennon/Hospede-Pet.git
+cd Hospede-Pet
 ```
 
 Windows PowerShell:
@@ -593,9 +593,9 @@ Em outro PowerShell, execute uma única vez para um banco novo:
 
 ```powershell
 $corpo = @{
-  nome = "Administrador PetzIn"
-  email = "admin@petzin.local"
-  senha = "PetzIn@123"
+  nome = "Administrador Hóspede Pet"
+  email = "admin@hospedepet.local"
+  senha = "HospedePet@123"
 } | ConvertTo-Json
 
 Invoke-RestMethod `
@@ -689,7 +689,7 @@ Resultados verificados nesta entrega:
 ## Estrutura do projeto
 
 ```text
-PetzIn/
+Hospede-Pet/
 |-- backend/
 |   |-- src/
 |   |   |-- controllers/

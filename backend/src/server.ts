@@ -13,7 +13,7 @@ async function iniciarServidor() {
 
     // Inicia o servidor somente após conectar ao banco
     app.listen(PORT, () => {
-      console.log(`PetzIn API rodando na porta ${PORT}`);
+      console.log(`API Hóspede Pet rodando na porta ${PORT}`);
     });
   } catch (error) {
     console.error('Erro ao conectar ao PostgreSQL:', error);

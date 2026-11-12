@@ -4,6 +4,7 @@ import { authGuard } from './core/guards/auth.guard';
 export const routes: Routes = [
   {
     path: 'login',
+    title: 'Login | Hóspede Pet',
     loadComponent: () =>
       import('./features/auth/login/login.page').then((modulo) => modulo.LoginPage),
   },
@@ -17,7 +18,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'dashboard',
-        title: 'Dashboard | PetzIn',
+        title: 'Dashboard | Hóspede Pet',
         loadComponent: () =>
           import('./features/dashboard/dashboard.page').then(
             (modulo) => modulo.DashboardPage,
@@ -25,7 +26,7 @@ export const routes: Routes = [
       },
       {
         path: 'tutores',
-        title: 'Tutores | PetzIn',
+        title: 'Tutores | Hóspede Pet',
         loadComponent: () =>
           import('./features/tutores/tutores.page').then(
             (modulo) => modulo.TutoresPage,
@@ -33,7 +34,7 @@ export const routes: Routes = [
       },
       {
         path: 'tutores/novo',
-        title: 'Novo tutor | PetzIn',
+        title: 'Novo tutor | Hóspede Pet',
         loadComponent: () =>
           import('./features/tutores/tutor-form.page').then(
             (modulo) => modulo.TutorFormPage,
@@ -41,7 +42,7 @@ export const routes: Routes = [
       },
       {
         path: 'tutores/:id/editar',
-        title: 'Editar tutor | PetzIn',
+        title: 'Editar tutor | Hóspede Pet',
         loadComponent: () =>
           import('./features/tutores/tutor-form.page').then(
             (modulo) => modulo.TutorFormPage,
@@ -49,13 +50,13 @@ export const routes: Routes = [
       },
       {
         path: 'pets',
-        title: 'Pets | PetzIn',
+        title: 'Pets | Hóspede Pet',
         loadComponent: () =>
           import('./features/pets/pets.page').then((modulo) => modulo.PetsPage),
       },
       {
         path: 'pets/novo',
-        title: 'Cadastrar pet | PetzIn',
+        title: 'Cadastrar pet | Hóspede Pet',
         loadComponent: () =>
           import('./features/pets/pet-form.page').then(
             (modulo) => modulo.PetFormPage,
@@ -63,7 +64,7 @@ export const routes: Routes = [
       },
       {
         path: 'pets/:id/editar',
-        title: 'Editar pet | PetzIn',
+        title: 'Editar pet | Hóspede Pet',
         loadComponent: () =>
           import('./features/pets/pet-form.page').then(
             (modulo) => modulo.PetFormPage,
@@ -71,7 +72,7 @@ export const routes: Routes = [
       },
       {
         path: 'pets/:id/prontuario',
-        title: 'Prontuário clínico | PetzIn',
+        title: 'Prontuário clínico | Hóspede Pet',
         loadComponent: () =>
           import('./features/cuidados/prontuario.page').then(
             (modulo) => modulo.ProntuarioPage,
@@ -79,7 +80,7 @@ export const routes: Routes = [
       },
       {
         path: 'reservas',
-        title: 'Reservas | PetzIn',
+        title: 'Reservas | Hóspede Pet',
         loadComponent: () =>
           import('./features/reservas/reservas.page').then(
             (modulo) => modulo.ReservasPage,
@@ -87,7 +88,7 @@ export const routes: Routes = [
       },
       {
         path: 'reservas/nova',
-        title: 'Nova reserva | PetzIn',
+        title: 'Nova reserva | Hóspede Pet',
         loadComponent: () =>
           import('./features/reservas/nova-reserva.page').then(
             (modulo) => modulo.NovaReservaPage,
@@ -95,7 +96,7 @@ export const routes: Routes = [
       },
       {
         path: 'reservas/:id/editar',
-        title: 'Editar reserva | PetzIn',
+        title: 'Editar reserva | Hóspede Pet',
         loadComponent: () =>
           import('./features/reservas/nova-reserva.page').then(
             (modulo) => modulo.NovaReservaPage,
@@ -103,7 +104,7 @@ export const routes: Routes = [
       },
       {
         path: 'reservas/:id',
-        title: 'Detalhes da reserva | PetzIn',
+        title: 'Detalhes da reserva | Hóspede Pet',
         loadComponent: () =>
           import('./features/reservas/reserva-detalhes.page').then(
             (modulo) => modulo.ReservaDetalhesPage,
@@ -111,7 +112,7 @@ export const routes: Routes = [
       },
       {
         path: 'reservas/:id/cuidados',
-        title: 'Cuidados da hospedagem | PetzIn',
+        title: 'Cuidados da hospedagem | Hóspede Pet',
         loadComponent: () =>
           import('./features/cuidados/cuidados-reserva.page').then(
             (modulo) => modulo.CuidadosReservaPage,
@@ -119,7 +120,7 @@ export const routes: Routes = [
       },
       {
         path: 'medicamentos',
-        title: 'Lembretes de medicamentos | PetzIn',
+        title: 'Lembretes de medicamentos | Hóspede Pet',
         loadComponent: () =>
           import('./features/cuidados/medicamentos.page').then(
             (modulo) => modulo.MedicamentosPage,
@@ -127,7 +128,7 @@ export const routes: Routes = [
       },
       {
         path: 'financeiro',
-        title: 'Financeiro | PetzIn',
+        title: 'Financeiro | Hóspede Pet',
         loadComponent: () =>
           import('./features/financeiro/financeiro.page').then(
             (modulo) => modulo.FinanceiroPage,
@@ -135,7 +136,7 @@ export const routes: Routes = [
       },
       {
         path: 'configuracoes/senha',
-        title: 'Alterar senha | PetzIn',
+        title: 'Alterar senha | Hóspede Pet',
         loadComponent: () =>
           import('./features/configuracoes/alterar-senha.page').then(
             (modulo) => modulo.AlterarSenhaPage,

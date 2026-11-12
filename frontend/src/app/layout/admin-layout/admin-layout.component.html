@@ -2,7 +2,7 @@
   <aside class="sidebar" aria-label="Navegação principal">
     <a class="brand" routerLink="/dashboard" (click)="fecharMenu()">
       <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="8" cy="9" rx="3.2" ry="4.5" transform="rotate(-24 8 9)"/><ellipse cx="16" cy="6.8" rx="3.2" ry="4.5"/><ellipse cx="24" cy="9" rx="3.2" ry="4.5" transform="rotate(24 24 9)"/><path d="M16 13c-6 0-10 7-10 11 0 4 3 5 7 4 2-1 4-1 6 0 4 1 7 0 7-4 0-4-4-11-10-11Z"/></svg>
-      <span>PetzIn</span>
+      <span>Hóspede Pet</span>
     </a>
 
     <nav>
@@ -51,7 +51,7 @@
       >
         ☰
       </button>
-      <span class="topbar-name">Hotel e Creche para Pets</span>
+      <span class="topbar-name">Cuidados Veterinários e Pousada Pet</span>
       <div class="topbar-actions">
         <a class="notification-link" routerLink="/medicamentos" aria-label="Lembretes de medicamentos" title="Lembretes de medicamentos"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg></a>
         <span class="avatar small">{{ authService.usuario()?.nome?.charAt(0) || 'P' }}</span>
