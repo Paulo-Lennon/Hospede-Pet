@@ -1,6 +1,6 @@
 # Hóspede Pet
 
-Sistema web para administração de um hotel e creche de animais. A aplicação permite que a proprietária do estabelecimento gerencie tutores, pets, reservas, hospedagens e pagamentos em um único lugar.
+Sistema web para administração de um hotel e creche de animais. A aplicação permite que a proprietária do estabelecimento gerencie tutores, pets, reservas, hospedagens e pagamentos tudo em um único lugar.
 
 ## Sumário
 
